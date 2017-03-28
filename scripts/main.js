@@ -10,6 +10,7 @@ addGreeting((user, response) => {
 
 newScript().dialog((session, response, stop) => {
     // yes DEMO_KEY works, just lay off spamming nasa :)
+    response.sendText('Getting today\'s image....');
     request({
         uri: 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY',
         method: 'GET',
