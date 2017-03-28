@@ -10,6 +10,7 @@ addGreeting((user, response) => {
 
 newScript()
     .dialog((session, response, stop) => {
+        console.log('hey');
         request({
             uri: 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY',
             method: 'GET',
