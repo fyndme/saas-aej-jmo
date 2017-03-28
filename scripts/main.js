@@ -17,6 +17,7 @@ newScript()
             json: true,
         })
             .then((response) => {
+                console.log(response);
                 response.sendText(response.title)
             })
         response.sendImage('http://apod.nasa.gov/apod/image/1703/KingOfWings_Pinkston_960.jpg');
