@@ -17,7 +17,7 @@ newScript()
             json: true,
         })
             .then((nasa) => {
-                response.sendText(nasa.title)l
+                response.sendText(nasa.title);
                 response.sendImage(nasa.url);
             })
     })
