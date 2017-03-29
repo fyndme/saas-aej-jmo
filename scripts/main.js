@@ -1,9 +1,3 @@
-// Globals
-// newScript
-// getScript
-// addGreeting
-// request
-
 addGreeting((user, response) => {
     response.sendText("I'll be showing you today's space photo!")
 })
